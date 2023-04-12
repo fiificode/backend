@@ -13,6 +13,7 @@ const PORT = process.env.PORT
 
 //middlewares
 app.use(express.json())
+app.use(express.urlencoded({extended: false}))
 app.use(cors())
 
 
