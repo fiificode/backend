@@ -13,7 +13,13 @@ router.post('/add-income', addIncome)
         .get('/get-expenses',getExpenses)
         .delete('/delete-expense/:id',deleteExpense)
 
+        .get('/', function (req, res) {
+            res.send('Hello World')
+          })
+
 
 
         
 module.exports = router
+
+//how to create an express server?
